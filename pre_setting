@@ -1,0 +1,3 @@
+docker run --name 'postgres_sql' -v 'pgdata':'/var/lib/postgresql/data'  -e 'POSTGRES_USER=admin' -e 'POSTGRES_PASSWORD=pass' -d -p 5432:5432 postgres:10.3
+
+docker run --name 'pgAdmin4' -e 'PGADMIN_DEFAULT_EMAIL=rickming0415@hotmail.com' -e 'PGADMIN_DEFAULT_PASSWORD=pass' -d -p 8081:80 dpage/pgadmin4
